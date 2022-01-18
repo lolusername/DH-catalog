@@ -15,7 +15,7 @@
       justify-between
     "
   >
-    <div class="z-40 inline-block">
+    <div class="z-40 inline-block font-mono uppercase">
       Digital Humanities Catalog<i class="inline-block text-3xl ml-1">+</i>
     </div>
     <a class="text-sm flex pt-2 text-gray-400 hover:text-gray-500">

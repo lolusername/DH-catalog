@@ -1,5 +1,5 @@
 <template>
-  <main class="min-h-screen bg-gray-50">
+  <main class="min-h-screen bg-gray-50 font-fort">
     <NavBar />
     <div class="grid grid-cols-3 container mx-auto gap-24">
       <section class="" v-for="post in posts" :key="post._id">
@@ -32,6 +32,8 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://use.typekit.net/vyy6qht.css');
+
 .text-dh-blue {
   color: #137ba2;
 }
