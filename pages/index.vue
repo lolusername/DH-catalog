@@ -3,10 +3,10 @@
     <NavBar />
     <div class="grid grid-cols-3 container mx-auto gap-24">
       <section class="" v-for="post in posts" :key="post._id">
-        <h2 class="lime-text text-3xl font-mono font-bold">
+        <h2 class="lime-text text-4xl font-mono font-bold">
           {{ post.title }}
         </h2>
-        <article class="text-dh-blue font-sans font-bold font-bold">
+        <article class="text-dh-blue font-sans my-2 text-2xl">
           {{ post.author.title }}
         </article>
         <SanityContent class="text-xl" :blocks="post.content" />
@@ -32,8 +32,6 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://use.typekit.net/vyy6qht.css');
-
 .text-dh-blue {
   color: #137ba2;
 }
