@@ -19,7 +19,7 @@ export default {
       {
         rel: 'stylesheet',
         type: 'text/css',
-        href: 'https://use.typekit.net/vyy6qht.css',
+        href: 'https://use.typekit.net/oke7hkn.css',
       },
     ],
   },

@@ -1,23 +1,42 @@
 <template>
   <nav
     class="
+      bg-lime
       border-b border-gray-500
       bg-red-50
       p-3
-      font-bold
       text-gray-900 text-2xl
       font-mono
       mb-24
       transition transition-color
-      hover:text-gray-600
       z-40
       flex
       justify-between
+      hover:bg-gray-800
+      group
     "
   >
-    <div class="z-40 inline-block font-mono uppercase">
-      Digital Humanities Catalog<i class="inline-block text-3xl ml-1">+</i>
+    <div class="z-40 inline-block font-macula text-gray-800 uppercase">
+      <span
+        class="
+          text-3xl
+          mina-rees
+          group-hover:text-gray-100
+          transition transition-colors
+        "
+      >
+        Mina Rees Library
+      </span>
+      <div
+        class="font-sans text-sm capitalize font-bold group-hover:text-red-200"
+      >
+        Digital Humanities Project Dataset & Analysis
+        <div class="font-thin group-hover:text-indigo-100">
+          CUNY Graduate Center
+        </div>
+      </div>
     </div>
+
     <a class="text-sm flex pt-2 text-gray-400 hover:text-gray-500">
       <svg
         class="inline-block mr-2 fill-current"
@@ -53,5 +72,12 @@ export default {}
 }
 svg {
   animation: rotateAnimation 2s infinite;
+}
+
+.bg-lime {
+  background: #bef264;
+}
+.bg-lime:hover {
+  @apply bg-gray-800;
 }
 </style>

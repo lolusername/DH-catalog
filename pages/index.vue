@@ -1,17 +1,44 @@
 <template>
   <main class="min-h-screen bg-gray-50 font-fort">
     <NavBar />
-    <div class="grid grid-cols-3 container mx-auto gap-24">
-      <section class="" v-for="post in posts" :key="post._id">
-        <h2 class="lime-text text-4xl font-mono font-bold">
-          {{ post.title }}
+    <section class="container max-w-screen-lg mx-auto">
+      <div
+        class="
+          p-6
+          bg-red-50
+          shadow-sm
+          text-xl
+          border-gray-800 border
+          mb-24
+          grid
+          gap-6
+        "
+      >
+        <h2 class="font-mono text-3xl font-bold">
+          Digital Humanities Research & Documentation
         </h2>
-        <article class="text-dh-blue font-sans my-2 text-2xl">
-          {{ post.author.title }}
-        </article>
-        <SanityContent class="text-xl" :blocks="post.content" />
-      </section>
-    </div>
+
+        <p>
+          Over the course of the Spring 2022 semester, researchers in
+          conjunction with librarians at the Mina Rees Library, will help index
+          digital projects cited in the
+          <span class="italic"> Debates in Digital Humanities</span> book
+          series, assist with preliminary data analysis and visualizations based
+          on the resulting dataset, and document the process on this site.
+        </p>
+        <p>More Updates soon</p>
+      </div>
+      <div class="grid grid-cols-3 gap-24">
+        <section class="" v-for="post in posts" :key="post._id">
+          <h2 class="text-dh-blue text-4xl font-mono font-bold">
+            {{ post.title }}
+          </h2>
+          <article class="font-bold my-2 text-xl">
+            {{ post.author.title }}
+          </article>
+        </section>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -34,6 +61,9 @@ export default {
 <style scoped>
 .text-dh-blue {
   color: #137ba2;
+}
+.bg-dh-blue {
+  background: #137ba2;
 }
 .lime-text {
   color: #84cc16;
