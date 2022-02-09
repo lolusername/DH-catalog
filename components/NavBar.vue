@@ -25,14 +25,13 @@
           transition transition-colors
         "
       >
-        Mina Rees Library
+        <i>Debates in DH Digital Project Index</i>
       </span>
       <div
         class="font-sans text-sm capitalize font-bold group-hover:text-red-200"
       >
-        Digital Humanities Project Dataset & Analysis
         <div class="font-thin group-hover:text-indigo-100">
-          CUNY Graduate Center
+          Mina Rees Library / CUNY Graduate Center
         </div>
       </div>
     </div>

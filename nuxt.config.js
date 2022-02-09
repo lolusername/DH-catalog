@@ -4,7 +4,7 @@ export default {
   // ssr: false,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'digitalHumanities',
+    title: 'Digital Humanities Research, Analysis, and Visualization',
     htmlAttrs: {
       lang: 'en',
     },

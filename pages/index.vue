@@ -9,7 +9,7 @@
           shadow-sm
           text-xl
           border-gray-800 border
-          mb-24
+          mb-16
           grid
           gap-6
         "
@@ -28,9 +28,10 @@
         </p>
         <p>More Updates soon</p>
       </div>
-      <div class="grid grid-cols-3 gap-24">
-        <section class="" v-for="post in posts" :key="post._id">
-          <h2 class="text-dh-blue text-4xl font-mono font-bold">
+      <div class="divide-y divide-gray-800">
+        <h2>Latest Posts</h2>
+        <section class="p-3" v-for="post in posts" :key="post._id">
+          <h2 class="text-dh-blue text-3xl font-mono font-bold">
             {{ post.title }}
           </h2>
           <article class="font-bold my-2 text-xl">
