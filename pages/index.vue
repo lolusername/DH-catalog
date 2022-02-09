@@ -30,13 +30,19 @@
       </div>
       <div class="divide-y divide-gray-800">
         <h2>Latest Posts</h2>
-        <section class="p-3" v-for="post in posts" :key="post._id">
-          <h2 class="text-dh-blue text-3xl font-mono font-bold">
-            {{ post.title }}
-          </h2>
-          <article class="font-bold my-2 text-xl">
-            {{ post.author.title }}
-          </article>
+        <section
+          class="p-3 hover:bg-indigo-50"
+          v-for="post in posts"
+          :key="post._id"
+        >
+          <NuxtLink :to="`blog/${post.urlSlug.current}`">
+            <h2 class="text-dh-blue text-3xl font-mono font-bold">
+              {{ post.title }}
+            </h2>
+            <article class="font-bold my-2 text-xl">
+              {{ post.author.title }}
+            </article>
+          </NuxtLink>
         </section>
       </div>
     </section>
@@ -68,8 +74,5 @@ export default {
 }
 .lime-text {
   color: #84cc16;
-}
-a {
-  @apply bg-gray-900 text-gray-50  hover:bg-red-900 rounded-xl px-1 pb-0.5;
 }
 </style>

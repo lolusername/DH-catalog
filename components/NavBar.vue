@@ -25,7 +25,7 @@
           transition transition-colors
         "
       >
-        <i>Debates in DH Digital Project Index</i>
+        <i><NuxtLink to="/">Debates in DH Digital Project Index</NuxtLink></i>
       </span>
       <div
         class="font-sans text-sm capitalize font-bold group-hover:text-red-200"
@@ -36,7 +36,7 @@
       </div>
     </div>
 
-    <a class="text-sm flex pt-2 text-gray-400 hover:text-gray-500">
+    <a class="text-sm flex pt-2 text-gray-400 hover:text-gray-500 hidden">
       <svg
         class="inline-block mr-2 fill-current"
         xmlns="http://www.w3.org/2000/svg"
